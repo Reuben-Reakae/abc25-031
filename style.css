@@ -5,7 +5,7 @@ body{
 }
 
 .hero{
-    background: url('images/farm.jpg');
+    background: url('Farm_background.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
