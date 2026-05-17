@@ -1,110 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Crops</title>
+    <title>Crops | Farmers Market</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <!-- ================= NAVIGATION ================= -->
 
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
-        <a class="navbar-brand" href="index.html">Farmers Market</a>
+        <div class="container">
 
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu">
+            <a class="navbar-brand" href="index.html">Farmers Market</a>
 
-            <span class="navbar-toggler-icon"></span>
+            <!-- Mobile button -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-        </button>
+                <span class="navbar-toggler-icon"></span>
 
-        <div class="collapse navbar-collapse" id="menu">
+            </button>
 
-            <ul class="navbar-nav ms-auto">
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="menu">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
+                <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="crops.html">Crops</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="review.html">Reviews</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="crops.html">Crops</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
 
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
+    </nav>
+
+    <!-- ================= CROPS TABLE ================= -->
+
+    <div class="container mt-5">
+
+        <h1 class="text-center mb-5">Available Crops</h1>
+
+        <!-- Crops Table -->
+
+        <table class="table table-bordered table-striped table-hover">
+
+            <thead class="table-success">
+
+                <tr>
+
+                    <th>Crop</th>
+
+                    <th>Price</th>
+
+                    <th>Availability</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Tomatoes</td>
+
+                    <td>P25 per kg</td>
+
+                    <td>Available</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Carrots</td>
+
+                    <td>P20 per bunch</td>
+
+                    <td>Available</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Maize</td>
+
+                    <td>P40 per bag</td>
+
+                    <td>Available</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Spinach</td>
+
+                    <td>P15 per bunch</td>
+
+                    <td>Available</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
     </div>
 
-</nav>
+    <!-- ================= FOOTER ================= -->
 
-<div class="container mt-5">
+    <footer>
 
-    <h1 class="text-center mb-5">Crops Available</h1>
+        <p>© 2026 Farmers Market | All Rights Reserved</p>
 
-    <table class="table table-bordered table-striped">
+    </footer>
 
-        <tr>
-            <th>Crop</th>
-            <th>Price</th>
-            <th>Availability</th>
-        </tr>
-
-        <tr>
-            <td>Tomatoes</td>
-            <td>P25/kg</td>
-            <td>Available</td>
-        </tr>
-
-        <tr>
-            <td>Carrots</td>
-            <td>P20/bunch</td>
-            <td>Available</td>
-        </tr>
-
-        <tr>
-            <td>Maize</td>
-            <td>P40/bag</td>
-            <td>Available</td>
-        </tr>
-
-        <tr>
-            <td>Spinach</td>
-            <td>P15/bunch</td>
-            <td>Available</td>
-        </tr>
-
-    </table>
-
-</div>
-
-<footer>
-
-    <p>© 2026 Farmers Market</p>
-
-</footer>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
