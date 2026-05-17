@@ -1,71 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
+    <!-- Character encoding -->
     <meta charset="UTF-8">
 
+    <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us</title>
+    <!-- Page title -->
+    <title>Contact Us | Farmers Market</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <!-- ================= NAVIGATION BAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">Farmers Market</a>
+
+            <!-- Mobile navigation button -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navigation menu -->
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="crops.html">Crops</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= CONTACT FORM ================= -->
 
     <div class="container">
 
-        <a class="navbar-brand" href="index.html">Farmers Market</a>
+        <div class="contact-form">
+
+            <h1 class="text-center mb-4">Contact Us</h1>
+
+            <!-- Contact Form -->
+            <form>
+
+                <!-- Name -->
+                <div class="mb-3">
+
+                    <label class="form-label">Full Name</label>
+
+                    <input type="text"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+
+                    <label class="form-label">Email Address</label>
+
+                    <input type="email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+                <!-- Message -->
+                <div class="mb-3">
+
+                    <label class="form-label">Message</label>
+
+                    <textarea class="form-control"
+                        rows="5"
+                        placeholder="Write your message"
+                        required></textarea>
+
+                </div>
+
+                <!-- Submit Button -->
+                <button class="btn btn-success w-100">
+
+                    Submit Message
+
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
 
-</nav>
+    <!-- ================= FOOTER ================= -->
 
-<div class="contact-form">
+    <footer>
 
-    <h1 class="text-center mb-4">Contact Us</h1>
+        <p>© 2026 Farmers Market | All Rights Reserved</p>
 
-    <form>
+    </footer>
 
-        <div class="mb-3">
-
-            <label>Name</label>
-
-            <input type="text" class="form-control" required>
-
-        </div>
-
-        <div class="mb-3">
-
-            <label>Email</label>
-
-            <input type="email" class="form-control" required>
-
-        </div>
-
-        <div class="mb-3">
-
-            <label>Message</label>
-
-            <textarea class="form-control" rows="5" required></textarea>
-
-        </div>
-
-        <button class="btn btn-success">Submit</button>
-
-    </form>
-
-</div>
-
-<footer>
-
-    <p>© 2026 Farmers Market</p>
-
-</footer>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
