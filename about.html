@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- Website character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Makes website responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About Us</title>
+    <!-- Page title -->
+    <title>About Us | Farmers Market</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <!-- ================= NAVIGATION BAR ================= -->
 
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
-        <a class="navbar-brand" href="index.html">Farmers Market</a>
+        <div class="container">
 
-    </div>
+            <!-- Website Logo -->
+            <a class="navbar-brand" href="index.html">Farmers Market</a>
 
-</nav>
+            <!-- Mobile Menu Button -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
 
-<section class="about-section">
+                <span class="navbar-toggler-icon"></span>
 
-    <h1>About Our Market</h1>
+            </button>
 
-    <p>
-        Farmers Market connects local farmers with customers looking for fresh produce.
-        We provide healthy vegetables, fruits and grains directly from farms.
-    </p>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="menu">
 
-    <img src="images/farmers.jpg" alt="Farmers" width="600" height="350">
+                <ul class="navbar-nav ms-auto">
 
-</section>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
 
-<footer>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
 
-    <p>© 2026 Farmers Market</p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="crops.html">Crops</a>
+                    </li>
 
-</footer>
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about-section container">
+
+        <h1 class="mb-4">About Our Farmers Market</h1>
+
+        <p>
+            Farmers Market is a local agricultural business that connects farmers
+            with customers looking for fresh vegetables, grains and fruits.
+        </p>
+
+        <p>
+            Our goal is to provide healthy, organic and affordable food
+            directly from local farms.
+        </p>
+
+        <!-- Farmers image -->
+        <img src="images/farmers.jpg"
+            alt="Farmers"
+            width="700"
+            height="400"
+            class="img-fluid rounded">
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 Farmers Market | All Rights Reserved</p>
+
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
