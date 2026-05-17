@@ -3,30 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshMart</title>
+    <title>Farmers Market</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>FreshMart Grocery</h1>
-    <nav>
-        <a>index.htmlHome</a>
-        <a>about.htmlAbout</a>
-        <a>products.htmlProducts</a>
-        <a>contact.htmlContact</a>
-        <a>feedback.htmlFeedback</a>
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Farmers Market</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="crops.html">Crops</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
     </nav>
-</header>
 
-<section>
-    <h2>Welcome to FreshMart</h2>
-    <p>Your one-stop grocery shop.</p>
-</section>
+    <!-- Hero Section -->
 
-<footer>
-    <p>&copy; 2026 FreshMart</p>
-</footer>
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <h1>Fresh Crops From Local Farmers</h1>
+
+            <p>Healthy, Fresh and Affordable Produce</p>
+
+            <a href="crops.html" class="btn btn-warning">View Crops</a>
+
+        </div>
+
+    </header>
+
+    <!-- Crops Section -->
+
+    <section class="container my-5">
+
+        <h2 class="text-center mb-4">Available Crops</h2>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="images/tomatoes.jpg" alt="Tomatoes" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Tomatoes</h5>
+                        <p>P25 per kg</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="images/maize.jpg" alt="Maize" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Maize</h5>
+                        <p>P40 per bag</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="images/carrots.jpg" alt="Carrots" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Carrots</h5>
+                        <p>P20 per bunch</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="images/spinach.jpg" alt="Spinach" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Spinach</h5>
+                        <p>P15 per bunch</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Farmers Market | All Rights Reserved</p>
+
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
