@@ -1,62 +1,115 @@
-body{
+/* ==========================================================================
+   1. GLOBAL AND BASE STYLES
+   ========================================================================== */
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fcfdfc; /* Clean, slightly green-tinted white */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.hero{
-    background: url('Farm_background.jpg');
+/* Custom Typography & Layout Utilities */
+.fw-black { font-weight: 900; }
+.fw-extrabold { font-weight: 850; }
+.tracking-wide { letter-spacing: 1px; }
+.tracking-tight { letter-spacing: -1px; }
+.letter-spacing-1 { letter-spacing: 0.5px; }
+.max-w-600 { max-width: 600px; }
+.start-25 { left: 25%; }
+.end-25 { right: 25%; }
+
+/* ==========================================================================
+   2. PRESENTATION LAYER THEMES & HERO (Cleaned up Spacing)
+   ========================================================================== */
+.hero {
+    background-image: url('Farm_background.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
-
+    background-repeat: no-repeat;
+    height: 520px; /* Perfectly balanced text container framework */
     display: flex;
-    justify-content: center;
     align-items: center;
+    position: relative;
+}
 
+/* Typography Text Shadow Layering for clear readability over imagery */
+.hero-text h1 {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .hero { height: 440px; }
+    .hero-text h1 { font-size: 2.3rem !important; }
+    .hero-text p { font-size: 1.05rem !important; }
+    .border-end { border-end: none !important; border-bottom: 1px solid #dee2e6 !important; padding-bottom: 15px; }
+}
+
+/* Transition Bezier curves */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ==========================================================================
+   3. CARDS & IMAGE COMPONENT SYSTEMS
+   ========================================================================== */
+.card {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Uniform Crop Grid Parameters */
+.card-img-top {
+    object-fit: cover;
+    height: 220px; 
+    transition: transform 0.5s ease;
+}
+
+/* Zoom animation on cards */
+.card:hover .image-zoom {
+    transform: scale(1.06);
+}
+
+/* ==========================================================================
+   4. RESPONSIVE FORMS & ELEMENT PLACEMENT WRAPPERS
+   ========================================================================== */
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.form-check-input {
+    float: none;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   5. UNIFORM FOOTER ALIGNMENT
+   ========================================================================== */
+footer {
+    background-color: #191c1f; /* Premium dark carbon shade */
+    color: #ffffff;
     text-align: center;
-    color: white;
-}
-
-.hero-text h1{
-    font-size: 55px;
-    font-weight: bold;
-}
-
-.hero-text p{
-    font-size: 22px;
-}
-
-.card{
-    transition: 0.4s;
-    margin-bottom: 20px;
-}
-
-.card:hover{
-    transform: scale(1.05);
-}
-
-footer{
-    background-color: #198754;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.about-section{
-    padding: 60px;
-    text-align: center;
-}
-
-.contact-form{
-    width: 60%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.review-box{
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+    padding: 24px;
+    margin-top: auto;
 }
