@@ -3,74 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshRoots Farmer's Market | Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Farmers Market</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="FreshRoots Market Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
-                FreshRoots Market
-            </a>
-            <button class="navbar-collapse-toggle d-lg-none btn text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                ☰
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+    <!-- Logo Image -->
+    <img src="hand-drawn-farmers-market-logo_23-2149329270.avif"
+         alt="Farmers Market Logo"
+         width="60"
+         height="60"
+         class="me-2 rounded-circle">
+
+    <!-- Website Name -->
+    <span>Farmers Market</span>
+
+</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="collapse navbar-collapse" id="menu">
+
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="produce.html">Our Produce</a></li>
-                    <li class="nav-item"><a class="nav-link" href="vendors.html">Meet Vendors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="feedback.html">Contact & Feedback</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="crops.html">Crops</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="review.html">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
                 </ul>
+
             </div>
+
         </div>
     </nav>
 
-    <header class="hero-section">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Locally Grown, Hand-Picked For You</h1>
-            <p class="lead">Supporting local farmers, bringing fresh and sustainable nutrition straight to your table.</p>
-            <a href="produce.html" class="btn btn-custom mt-3">Explore Today's Harvest</a>
+    <!-- Hero Section -->
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <h1>Fresh Crops From Local Farmers</h1>
+
+            <p>Healthy, Fresh and Affordable Produce</p>
+
+            <a href="crops.html" class="btn btn-warning">View Crops</a>
+
         </div>
+
     </header>
 
-    <main class="container section-padding">
-        <div class="row text-center g-4">
-            <div class="col-md-4">
-                <div class="p-3 border rounded shadow-sm">
-                    <img src="fresh.jpg" alt="Crisp green organic vegetables" width="200" height="150" class="img-fluid rounded mb-3">
-                    <h3>100% Organic</h3>
-                    <p>No synthetic chemicals or pesticides. Just pure, natural food grown with care.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-3 border rounded shadow-sm">
-                    <img src="local.jpg" alt="Local farmer smiling holding a harvest basket" width="200" height="150" class="img-fluid rounded mb-3">
-                    <h3>Support Local</h3>
-                    <p>Every purchase directly sustains independent family farms within our community.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-3 border rounded shadow-sm">
-                    <img src="community.jpg" alt="People gathering at community market stalls" width="200" height="150" class="img-fluid rounded mb-3">
-                    <h3>Community First</h3>
-                    <p>More than a market—we are a weekend gathering place for families and events.</p>
-                </div>
-            </div>
-        </div>
-    </main>
+    <!-- Crops Section -->
 
-    <footer class="text-center">
-        <div class="container">
-            <p class="mb-1">&copy; 2026 FreshRoots Farmer's Market. All Rights Reserved.</p>
-            <small>Eat Fresh. Support Local. Live Sustainably.</small>
+    <section class="container my-5">
+
+        <h2 class="text-center mb-4">Available Crops</h2>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="tomatoes.webp" alt="Tomatoes" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Tomatoes</h5>
+                        <p>P25 per kg</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="Maize.jpg" alt="Maize" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Maize</h5>
+                        <p>P40 per bag</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="Carrots.webp" alt="Carrots" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Carrots</h5>
+                        <p>P20 per bunch</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="Spinach.jpg" alt="Spinach" width="300" height="200" class="card-img-top">
+
+                    <div class="card-body text-center">
+                        <h5>Spinach</h5>
+                        <p>P15 per bunch</p>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Farmers Market | All Rights Reserved</p>
+
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
