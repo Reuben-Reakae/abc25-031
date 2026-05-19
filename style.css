@@ -1,62 +1,62 @@
-/* Custom variables for a fresh, organic Farmer's Market palette */
-:root {
-    --primary-green: #2c5e3b;
-    --accent-orange: #e67e22;
-    --light-bg: #f8f9fa;
-    --dark-text: #2c3e50;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--dark-text);
-    background-color: #ffffff;
-    line-height: 1.6;
+.hero{
+    background: url('Farm_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
 }
 
-/* Page Uniformity: Header & Navigation Styling */
-.navbar {
-    background-color: var(--primary-green) !important;
-    padding: 1rem 2rem;
+.hero-text h1{
+    font-size: 55px;
+    font-weight: bold;
 }
 
-.navbar-brand, .nav-link {
-    color: #ffffff !important;
-    font-weight: 500;
+.hero-text p{
+    font-size: 22px;
 }
 
-.nav-link:hover {
-    color: var(--accent-orange) !important;
+.card{
+    transition: 0.4s;
+    margin-bottom: 20px;
 }
 
-/* Active White Space & Structural Sections */
-.section-padding {
-    padding: 5rem 0; /* Ensures clean, professional spacing between content sections */
+.card:hover{
+    transform: scale(1.05);
 }
 
-.hero-section {
-    background-color: var(--light-bg);
-    padding: 6rem 0;
+footer{
+    background-color: #198754;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section{
+    padding: 60px;
     text-align: center;
 }
 
-.btn-custom {
-    background-color: var(--accent-orange);
-    color: white;
-    border: none;
-    padding: 0.75rem 2rem;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+.contact-form{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
 }
 
-.btn-custom:hover {
-    background-color: #d35400;
-    color: white;
-}
-
-/* Footer Uniformity */
-footer {
-    background-color: #1a3c22;
-    color: #ecf0f1;
-    padding: 2rem 0;
-    margin-top: auto;
+.review-box{
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
