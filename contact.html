@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Farmers Market</title>
+    <title>Contact Info | Farmers Market</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -36,118 +36,63 @@
 
     <main class="container my-5 py-3">
         <header class="text-center mb-5">
-            <h1 class="fw-black text-dark text-uppercase tracking-tight">Get In Touch</h1>
+            <h1 class="fw-black text-dark text-uppercase tracking-tight">Contact Information</h1>
             <p class="text-success fw-semibold fst-italic letter-spacing-1">"Fresh from local roots to your family tables."</p>
             <div class="position-relative d-inline-block w-100 mt-2">
                 <span class="position-absolute top-50 start-50 translate-middle bg-success rounded" style="height: 4px; width: 60px;"></span>
             </div>
         </header>
 
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="p-4 p-sm-5 bg-white border border-light-subtle rounded-4 shadow-sm">
-                    <h3 class="fw-bold text-dark mb-2 fs-4 text-center">Leave a Review</h3>
-                    <p class="text-muted small mb-4 text-center">Your notes are immediately passed on to help us improve our harvest services.</p>
-                    
-                    <form id="reviewForm" onsubmit="handleReviewSubmit(event)" class="d-flex flex-column gap-3">
-                        
-                        <div>
-                            <label class="form-label text-dark fw-semibold small">Full Name</label>
-                            <input type="text" id="custName" class="form-control rounded-3" placeholder="Enter your full name" required>
-                        </div>
-
-                        <div>
-                            <label class="form-label text-dark fw-semibold small">Email Address</label>
-                            <input type="email" id="custEmail" class="form-control rounded-3" placeholder="username@example.com" required>
-                        </div>
-
-                        <div>
-                            <label class="form-label text-dark fw-semibold small">Primary Crop Purchased</label>
-                            <select id="custCrop" class="form-select rounded-3" required>
-                                <option value="" disabled selected>Select an option...</option>
-                                <option value="Tomatoes">Tomatoes</option>
-                                <option value="Maize">Maize</option>
-                                <option value="Carrots">Carrots</option>
-                                <option value="Spinach">Spinach</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="form-label text-dark fw-semibold d-block small mb-2 text-center">Rate Freshness Quality</label>
-                            <div class="d-flex justify-content-center align-items-center gap-3 py-2 bg-light rounded-3 border border-light-subtle">
-                                <div class="form-check form-check-inline mx-0">
-                                    <input class="form-check-input" type="radio" name="rating" id="rate1" value="1" required>
-                                    <label class="form-check-label text-warning fw-bold small" for="rate1">1★</label>
-                                </div>
-                                <div class="form-check form-check-inline mx-0">
-                                    <input class="form-check-input" type="radio" name="rating" id="rate2" value="2">
-                                    <label class="form-check-label text-warning fw-bold small" for="rate2">2★</label>
-                                </div>
-                                <div class="form-check form-check-inline mx-0">
-                                    <input class="form-check-input" type="radio" name="rating" id="rate3" value="3">
-                                    <label class="form-check-label text-warning fw-bold small" for="rate3">3★</label>
-                                </div>
-                                <div class="form-check form-check-inline mx-0">
-                                    <input class="form-check-input" type="radio" name="rating" id="rate4" value="4">
-                                    <label class="form-check-label text-warning fw-bold small" for="rate4">4★</label>
-                                </div>
-                                <div class="form-check form-check-inline mx-0">
-                                    <input class="form-check-input" type="radio" name="rating" id="rate5" value="5">
-                                    <label class="form-check-label text-warning fw-bold small" for="rate5">5★</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="form-label text-dark fw-semibold small">Detailed Comments</label>
-                            <textarea id="custComments" class="form-control rounded-3" rows="4" placeholder="Share comments about freshness or pricing..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-success w-100 py-2.5 rounded-3 fw-bold text-uppercase tracking-wide mt-2">
-                            Submit Feedback
-                        </button>
-                    </form>
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 p-4 text-center bg-white border border-light-subtle rounded-4 shadow-sm">
+                    <div class="fs-1 text-success mb-2">📞</div>
+                    <h5 class="fw-bold text-dark mb-2">Reach Us Directly</h5>
+                    <p class="text-muted small mb-3">Have questions about current seasonal stock or bulk ordering quantities?</p>
+                    <div class="bg-light py-2 px-3 rounded-3 d-inline-block border">
+                        <a href="tel:+2673951111" class="text-success fw-bold text-decoration-none">+267 395 1111</a>
+                    </div>
+                    <p class="text-muted small mt-3 mb-0">Email: <a href="mailto:support@farmersmarket.co.bw" class="text-success text-decoration-none">support@farmersmarket.co.bw</a></p>
                 </div>
             </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 p-4 text-center bg-white border border-light-subtle rounded-4 shadow-sm">
+                    <div class="fs-1 text-success mb-2">🕒</div>
+                    <h5 class="fw-bold text-dark mb-2">Market Hours</h5>
+                    <p class="text-muted small mb-3">We harvest fresh every single morning to keep our stocks pristine.</p>
+                    
+                    <ul class="list-unstyled text-start mx-auto mb-0" style="max-width: 220px;">
+                        <li class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Mon - Fri:</span> <strong class="text-dark">07:00 - 17:00</strong>
+                        </li>
+                        <li class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Saturdays:</span> <strong class="text-dark">06:00 - 13:00</strong>
+                        </li>
+                        <li class="d-flex justify-content-between small text-muted">
+                            <span>Sundays:</span> <strong class="text-danger">Closed</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 p-4 text-center bg-white border border-light-subtle rounded-4 shadow-sm">
+                    <div class="fs-1 text-success mb-2">📍</div>
+                    <h5 class="fw-bold text-dark mb-2">Our Trading Hub</h5>
+                    <p class="text-muted small mb-3">Come visit our sorting collection center and pick up produce direct from the lines.</p>
+                    <p class="fw-semibold text-dark small mb-1">Plot 54341, Innovation Way</p>
+                    <p class="text-muted small mb-0">Gaborone, Botswana</p>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <footer class="mt-5 py-4">
         <p class="mb-0 small opacity-75">© 2026 Farmers Market | All Rights Reserved</p>
     </footer>
-
-    <script>
-        function handleReviewSubmit(event) {
-            event.preventDefault(); // Stop page from posting to GitHub server (avips 405)
-
-            // Extract values out of our form inputs
-            const name = document.getElementById('custName').value;
-            const crop = document.getElementById('custCrop').value;
-            const comments = document.getElementById('custComments').value;
-            const ratingValue = document.querySelector('input[name="rating"]:checked').value;
-
-            // Generate a star string display sequence based on selection integer
-            let stars = '';
-            for (let i = 0; i < 5; i++) {
-                stars += (i < ratingValue) ? '★' : '☆';
-            }
-
-            // Assemble into a clean data object structure
-            const newReview = { name, crop, stars, comments };
-
-            // Retrieve existing storage database array or instantiate empty sequence array
-            let existingReviews = JSON.parse(localStorage.getItem('marketReviews')) || [];
-            
-            // Push newest record directly into front array index placement position
-            existingReviews.unshift(newReview);
-
-            // Re-commit modified string payload data cleanly back to memory storage
-            localStorage.setItem('marketReviews', JSON.stringify(existingReviews));
-
-            // Instantly transition user over to see their changes populate on live review board
-            window.location.href = 'review.html?submitted=true';
-        }
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
